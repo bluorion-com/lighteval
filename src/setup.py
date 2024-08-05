@@ -32,6 +32,8 @@ setuptools.setup(
             "bdist_wheel": _bdist_wheel,
         }
     ),
+    include_package_data=True,
+    package_data={"lighteval/metrics": ["lighteval/metrics/*.jsonl"]},
     install_requires=[
         # Base dependencies
         "transformers>=4.38.0",
